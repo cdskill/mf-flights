@@ -1,0 +1,30 @@
+<h2>MF5/FLIGHTS (outside from angular workspace)</h2>
+<p>flights works!</p>
+
+user: <code>{{uS.getCurrentUser() | json}}</code><br>
+ID USERS_SERVICE: <code>{{uS.id}}</code>
+<hr>
+<p>
+  from npm public: {{counterService.subObs$ | async}}<br>
+  <button (click)="counterService.increment()">INCREMENT(LIB)</button>
+</p>
+<hr>
+<div>
+  <h3>Translated stuff</h3>
+  {{'flightNumber' | translate}}
+</div>
+<hr>
+<div style="max-width: 700px; margin: 0 200px">
+  <label for="search">Type your searched text: </label>
+  <input id="search" type="text" [(ngModel)]="searchKeyword"><br>
+  <p HighlightKeywordDirective [searchText]="searchKeyword">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium aspernatur consequatur corporis doloremque eum ex,
+    explicabo facere, hic magnam obcaecati placeat quod rerum suscipit tempore veniam vitae voluptatem voluptates. Lorem ipsum dolor sit amet,
+    consectetur adipisicing elit. Fuga magni neque odit unde veniam. Iste, sed, soluta. Debitis delectus dicta,
+    esse inventore laudantium obcaecati veniam voluptas! Eos eveniet iste nam. Lorem ipsum dolor sit amet, consectetur
+    adipisicing elit. Et ipsa molestiae odio perspiciatis quod sequi? Animi aperiam aspernatur at
+    consectetur cumque ipsam iste nulla, quisquam quos rerum sequi, velit, voluptatem. Lorem ipsum dolor sit amet,
+    consectetur adipisicing elit. Alias atque blanditiis debitis dicta distinctio dolorum ducimus enim,
+    et facilis libero, odio quaerat quos reprehenderit repudiandae tempore vitae voluptatum! Blanditiis, sed?
+  </p>
+</div>
